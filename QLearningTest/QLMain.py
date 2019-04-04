@@ -3,7 +3,7 @@ from RL_brain import QLearningTable
 
 
 def update():
-    for episode in range(100):
+    for episode in range(50):
         observation = env.reset()
         while True:
             env.render()
@@ -26,3 +26,5 @@ if __name__ == "__main__":
     RL = QLearningTable(actions=list(range(env.n_actions)))
     env.after(100, update)
     env.mainloop()
+    print('\r\nQ-table:\n')
+    print(RL.q_table)
