@@ -3,8 +3,6 @@ from RL_brain import QLearningTable
 
 # @author: sunshine
 # @date: 20200706
-# @author: sunshine
-# @date: 20200706
 
 
 
