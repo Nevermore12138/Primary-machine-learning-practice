@@ -7,6 +7,7 @@ from RL_brain import QLearningTable
 # @date: 20200706
 
 
+
 def update():
     for episode in range(50):
         observation = env.reset()
@@ -24,6 +25,7 @@ def update():
 
     print('game over')
     env.destroy()
+    # env.destroy()
 
 
 if __name__ == "__main__":
