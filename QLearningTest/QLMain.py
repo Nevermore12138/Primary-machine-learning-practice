@@ -31,6 +31,8 @@ def update():
 
 
 if __name__ == "__main__":
+    # env.destroy()
+    # env.destroy()
     env = Maze()
     RL = QLearningTable(actions=list(range(env.n_actions)))
     env.after(100, update)
